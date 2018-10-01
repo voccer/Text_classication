@@ -20,6 +20,6 @@ X, y = keras_text_classifier.load_data(['data/sentiment/samples/positive.txt',
 
 keras_text_classifier.train(X, y)
 label_dict = {0: 'tích cực', 1: 'tiêu cực'}
-test_sentences = ['Dở thế', 'éo thích', 'hay phết', 'chẳng có gì']
+test_sentences = ['Dở thế', 'éo thích', 'hay phết', 'hong có gì']
 labels = keras_text_classifier.classify(test_sentences, label_dict=label_dict)
 print(labels)  # Output: ['tiêu cực', 'tích cực', 'tiêu cực', 'tiêu cực']
